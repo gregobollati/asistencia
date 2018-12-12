@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+<p>hola</p>
+	{% for pr in presencia %}
+		<p>El alumno {{pr.alumno}} estuvo presente el dia {{pr.fecha}}</p>
+		<br>
+	{% endfor %}
+</body>
+</html>

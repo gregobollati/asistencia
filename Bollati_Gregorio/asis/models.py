@@ -13,7 +13,7 @@ class Curso(models.Model):
 
 class Alumno(models.Model):
     nombre = models.CharField(max_length=50)
-    curso = models.ManyToManyField(Curso)
+    curso = models.ForeignKey(Curso)
 
     def __str__(self):
         return 'Alumno {}'.format(self.nombre)
